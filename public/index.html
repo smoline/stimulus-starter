@@ -12,19 +12,24 @@
     <button data-action="click->hello#greet">Greet</button>
   </div>
   </br>
-  <div data-controller="clipboard">
+  <div data-controller="clipboard" data-clipboard-supported-class="clipboard--supported">
     PIN: <input data-clipboard-target="source" type="text" value="1234" readonly>
-    <button data-action="clipboard#copy">Copy to Clipboard</button>
+    <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>
   </div>
   </br>
-  <div data-controller="clipboard">
+  <div data-controller="clipboard" data-clipboard-supported-class="clipboard--supported">
     PIN: <input data-clipboard-target="source" type="text" value="3737" readonly>
-    <button data-action="clipboard#copy">Copy to Clipboard</button>
+    <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>
   </div>
   </br>
-  <div data-controller="clipboard">
+  <div data-controller="clipboard" data-clipboard-supported-class="clipboard--supported">
     PIN: <textarea data-clipboard-target="source" readonly>1020</textarea>
-    <a href="#" data-action="clipboard#copy">Copy to Clipboard</a>
+    <a href="#" data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</a>
+  </div>
+  </br>
+  <div data-controller="clipboard" data-clipboard-supported-class="clipboard--supported">
+    PIN: <input data-clipboard-target="source" type="text" value="5678" readonly>
+    <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>
   </div>
 </body>
 </html>
