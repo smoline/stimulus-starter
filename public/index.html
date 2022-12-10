@@ -6,10 +6,25 @@
   <script src="bundle.js" async></script>
 </head>
 <body>
+  <h1 data-controller="example"></h1>
   <div data-controller="hello">
     <input data-hello-target="name" type="text">
     <button data-action="click->hello#greet">Greet</button>
   </div>
-  <h1 data-controller="example"></h1>
+  </br>
+  <div data-controller="clipboard">
+    PIN: <input data-clipboard-target="source" type="text" value="1234" readonly>
+    <button data-action="clipboard#copy">Copy to Clipboard</button>
+  </div>
+  </br>
+  <div data-controller="clipboard">
+    PIN: <input data-clipboard-target="source" type="text" value="3737" readonly>
+    <button data-action="clipboard#copy">Copy to Clipboard</button>
+  </div>
+  </br>
+  <div data-controller="clipboard">
+    PIN: <textarea data-clipboard-target="source" readonly>1020</textarea>
+    <a href="#" data-action="clipboard#copy">Copy to Clipboard</a>
+  </div>
 </body>
 </html>
