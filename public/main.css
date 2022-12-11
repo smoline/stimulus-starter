@@ -9,3 +9,7 @@ body {
 .clipboard--supported .clipboard-button {
   display: initial;
 }
+
+.slideshow-size {
+  font-size: 40px;
+}
